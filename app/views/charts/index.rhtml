@@ -18,6 +18,7 @@
 
       <% form_tag '#', :method => :get do %>
         <%= hidden_field_tag :page, @page %>
+        <%= hidden_field_tag :project_id, @project.id %>
           
         <% if @show_conditions %>
           <% if @sub_project_condition %>
